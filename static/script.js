@@ -263,6 +263,7 @@ function generatePassword(options) {
 
 */
 
+
 let step = 0;  // Keeps track of the current prompt step
 let passwordOptions = {};
 
@@ -395,3 +396,4 @@ function generatePassword(options) {
         output.innerHTML += `<div class="error">Error generating password.</div>`;
     });
 }
+
