@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunny Password Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="terminal">
+        <div class="bunny-header">
+            <div class="bunny-block">
+                <img src="{{ url_for('static', filename='bunny.png') }}" alt="Cute Bunny">
+            </div>
+            <h1>Welcome human!</h1>
+        </div>
+
+        <div id="output"></div>
+
+        <!-- The terminal-like command input -->
+        <div class="command-line">
+            <span class="prompt">></span>
+            <input type="text" id="input" class="terminal-input" autofocus />
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
